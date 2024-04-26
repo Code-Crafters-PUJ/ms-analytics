@@ -2,7 +2,7 @@ import uvicorn
 from dotenv import load_dotenv
 
 from src.config import load_metadata
-from src.presentation.server import app
+from src.server import app
 
 
 def main(dev: bool = False) -> None:
