@@ -1,8 +1,26 @@
 {
-  "accounting": {
-    "x": {},
-    "y": {}
-  },
+  "accounting": [
+    {
+      "contract_type": "defined",
+      "status": "active"
+    },
+    {
+      "contract_type": "undefined",
+      "status": "inactive"
+    },
+    {
+      "contract_type": "provision_of_services",
+      "status": "active"
+    },
+    {
+      "contract_type": "provision_of_services",
+      "status": "inactive"
+    },
+    {
+      "contract_type": "defined",
+      "status": "active"
+    }
+  ],
   "general": {
     "x": {
       "most_selled_products": [
@@ -21,21 +39,10 @@
       ]
     },
     "y": {
-      "total_sales": [
-        100000,
-        200000,
-        300000,
-        400000,
-        500000
-      ],
-      "income": [
-        50000,
-        100000,
-        150000,
-        200000,
-        250000
-      ]
-    }
+      "total_sales": [100000, 200000, 300000, 400000, 500000],
+      "income": [50000, 100000, 150000, 200000, 250000]
+    },
+    "total_sales": []
   },
   "inventory": {
     "x": {},

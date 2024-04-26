@@ -11,7 +11,5 @@ router = APIRouter()
 @router.get("/info")
 async def get_info_accounting(
     _: Annotated[None, Depends(validate_role(Role.ADMIN))],
-    x_type: None,
-    y_type: None,
 ) -> None:
     ...
