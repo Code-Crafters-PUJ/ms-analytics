@@ -1,10 +1,16 @@
 from enum import Enum
 
 
-class GeneralChartXOptions(Enum):
-    MOST_SELLED_PRODUCTS = "most selled products"
-    TIME_PERIODS = "time periods"
+class GeneralChartXOption(Enum):
+    MOST_SELLED_PRODUCTS = "most_selled_products"
+    TIME_PERIODS = "time_periods"
 
-class GeneralChartYOptions(Enum):
-    TOTAL_SALES = "total sales"
+
+class GeneralChartYOption(Enum):
+    TOTAL_SALES = "total_sales"
     INCOME = "income"
+
+
+class Role(Enum):
+    ADMIN = "admin"
+    USER = "user"
