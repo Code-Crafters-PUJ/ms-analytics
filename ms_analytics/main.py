@@ -1,8 +1,8 @@
 import uvicorn
 from dotenv import load_dotenv
 
-from src.config import load_metadata
-from src.server import app
+from ms_analytics.config import load_metadata
+from ms_analytics.server import app
 
 
 def main(dev: bool = False) -> None:

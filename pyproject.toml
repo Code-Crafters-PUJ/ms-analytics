@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "ms-analytics"
+name = "ms_analytics"
 version = "0.1.0"
 description = ""
 authors = ["Santicm23 <Santicastrom@outlook.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-start = "chess_web.main:main"
-dev = "chess_web.main:main(True)"
+start = "ms_analytics.main:main"
+dev = "ms_analytics.main:main(True)"
 
 [tool.poetry.dependencies]
 python = "^3.12"
