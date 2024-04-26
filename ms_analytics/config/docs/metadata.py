@@ -2,7 +2,7 @@ from importlib.metadata import metadata, version
 
 from fastapi import FastAPI
 
-__project__ = "chess_web"
+__project__ = "ms_analytics"
 
 
 def load_metadata(app: FastAPI) -> None:
