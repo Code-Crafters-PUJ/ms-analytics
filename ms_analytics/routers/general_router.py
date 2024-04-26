@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends
 from ..config.constants.app import GeneralChartXOption, GeneralChartYOption, Role
 from ..controllers import get_general_info
 from ..dtos.output import GeneralChartInfoDto
-from ..middleware import validate_role
+from ..middlewares import validate_role
 
 router = APIRouter()
 
