@@ -1,4 +1,4 @@
-from .accounting_dtos import CategoryVsPurchaseAndSalesDto, LossVsProfitChartDto
+from .accounting_dtos import CategoryVsPurchaseAndSalesDto, LossVsProfitDto
 from .inventory_dtos import (
     CategoryVsStockPercentageDto,
     ProductVsTop5lessStockDto,
@@ -9,7 +9,7 @@ from .sales_dtos import BranchVsSalesDto, MonthVsIncomeDto, TopSaledProductsVsSa
 
 __all__ = [
     "CategoryVsPurchaseAndSalesDto",
-    "LossVsProfitChartDto",
+    "LossVsProfitDto",
     "CategoryVsStockPercentageDto",
     "ProductVsTop5lessStockDto",
     "ProviderVsStockPercentageDto",

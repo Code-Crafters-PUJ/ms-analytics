@@ -1,11 +1,11 @@
-from ..dtos.output import CategoryVsPurchaseAndSalesDto, LossVsProfitChartDto
+from ..dtos.output import CategoryVsPurchaseAndSalesDto, LossVsProfitDto
 from ..helpers.data import get_data
 
 
-async def loss_vs_profit() -> LossVsProfitChartDto:
+async def loss_vs_profit() -> LossVsProfitDto:
     data = get_data()
 
-    return LossVsProfitChartDto(
+    return LossVsProfitDto(
         loss=data["accounting"]["lossVsProfitPercentage"]["loss"],
         profit=data["accounting"]["lossVsProfitPercentage"]["profit"],
     )

@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class LossVsProfitChartDto(BaseModel):
+class LossVsProfitDto(BaseModel):
     loss: float
     profit: float
 
