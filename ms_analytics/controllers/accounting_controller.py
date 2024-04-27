@@ -8,8 +8,8 @@ async def loss_vs_profit() -> LossVsProfitChartDto:
         data = json.load(f)
 
     return LossVsProfitChartDto(
-        loss=data["lossVsProfitPercentage"]["loss"],
-        profit=data["lossVsProfitPercentage"]["profit"]
+        loss=data["accounting"]["lossVsProfitPercentage"]["loss"],
+        profit=data["accounting"]["lossVsProfitPercentage"]["profit"]
     )
 
 
@@ -18,9 +18,9 @@ async def category_vs_purchase_and_sales() -> CategoryVsPurchaseAndSalesDto:
         data = json.load(f)
     
     return CategoryVsPurchaseAndSalesDto(
-        categories=data["categoryVsPurchaseAndSales"]["categories"],
-        purchase=data["categoryVsPurchaseAndSales"]["purchase"],
-        sales=data["categoryVsPurchaseAndSales"]["sales"]
+        categories=data["accounting"]["categoryVsPurchaseAndSales"]["categories"],
+        purchase=data["accounting"]["categoryVsPurchaseAndSales"]["purchase"],
+        sales=data["accounting"]["categoryVsPurchaseAndSales"]["sales"]
     )
     
     
