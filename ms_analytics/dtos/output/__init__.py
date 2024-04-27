@@ -1,7 +1,8 @@
-from .accounting_chart_info_dto import AccountingChartInfoDto
+from .accounting_dtos import CategoryVsPurchaseAndSalesDto, LossVsProfitChartDto
 from .general_chart_info_dto import GeneralChartInfoDto
 
 __all__ = [
-    "AccountingChartInfoDto",
+    "CategoryVsPurchaseAndSalesDto",
     "GeneralChartInfoDto",
+    "LossVsProfitChartDto"
 ]

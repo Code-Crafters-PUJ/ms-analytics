@@ -1,5 +1,5 @@
-from .general_controller import get_general_info
+from .accounting_controller import loss_vs_profit
 
 __all__ = [
-    "get_general_info",
+    "loss_vs_profit",
 ]
