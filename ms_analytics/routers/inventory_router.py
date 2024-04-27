@@ -2,13 +2,12 @@ from typing import Annotated
 
 from fastapi import APIRouter, Depends
 
-from ms_analytics.controllers.inventory_controller import (
+from ..config.constants.app import Role
+from ..controllers import (
     category_vs_stock_percentage,
     product_vs_top_5_less_stock,
     provider_vs_stock_percentage,
 )
-
-from ..config.constants.app import Role
 from ..dtos.output import (
     CategoryVsStockPercentageDto,
     ProductVsTop5lessStockDto,
