@@ -85,7 +85,7 @@
       "sales": [93, 80, 78, 64, 63]
     },
     "monthVsIncome": {
-      "month": [
+      "months": [
         "jan",
         "feb",
         "mar",
@@ -105,7 +105,7 @@
       ]
     },
     "branchVsSales": {
-      "branch": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena"],
+      "branches": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena"],
       "sales": [75000000, 69000000, 65000000, 60000000, 42000000]
     }
   }

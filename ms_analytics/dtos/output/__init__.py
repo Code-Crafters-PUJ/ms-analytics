@@ -5,6 +5,7 @@ from .inventory_dtos import (
     ProviderVsStockPercentageDto,
 )
 from .payroll_dtos import FortnightVsSalaryDto, MonthVsSalaryDto
+from .sales_dtos import BranchVsSalesDto, MonthVsIncomeDto, TopSaledProductsVsSalesDto
 
 __all__ = [
     "CategoryVsPurchaseAndSalesDto",
@@ -14,4 +15,7 @@ __all__ = [
     "ProviderVsStockPercentageDto",
     "FortnightVsSalaryDto",
     "MonthVsSalaryDto",
+    "BranchVsSalesDto",
+    "MonthVsIncomeDto",
+    "TopSaledProductsVsSalesDto",
 ]
