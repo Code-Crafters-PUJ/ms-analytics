@@ -12,15 +12,15 @@
   },
   "inventory": {
     "categoryVsStockPercentage": {
-      "category": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],
+      "categories": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],
       "stock": [0.2, 0.3, 0.1, 0.15, 0.05, 0.2]
     },
     "productVsTop5lessStock": {
-      "product": ["Pan integral", "Leche de almendras", "Cocosette", "Naranja Postobón", "Recreo"],
+      "products": ["Pan integral", "Leche de almendras", "Cocosette", "Naranja Postobón", "Recreo"],
       "stock": [5, 7, 9, 12, 20]
     },
     "providerVsStockPercentage": {
-      "provider": ["Alpina", "Bimbo", "Colombina", "Kellogg's", "Postobón"],
+      "providers": ["Alpina", "Bimbo", "Colombina", "Kellogg's", "Postobón"],
       "stock": [0.2, 0.3, 0.1, 0.15, 0.25]
     }
   },
