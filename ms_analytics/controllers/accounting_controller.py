@@ -1,15 +1,26 @@
 import json
 
-from ..config.constants.app import AccountingChartXOption
-from ..dtos.output import AccountingChartInfoDto
+from ..dtos.output import CategoryVsPurchaseAndSalesDto, LossVsProfitChartDto
 
 
-async def get_accounting_info(x_type: AccountingChartXOption) -> AccountingChartInfoDto:
+async def loss_vs_profit() -> LossVsProfitChartDto:
     with open("ms_analytics/data/data.json") as f:
         data = json.load(f)
 
-    return AccountingChartInfoDto(
-        x_label=x_type,
-        x=data["accounting"]["x"][x_type.value],
-        y=data["accounting"]["y"],
+    return LossVsProfitChartDto(
+        loss=data["accounting"]["lossVsProfitPercentage"]["loss"],
+        profit=data["accounting"]["lossVsProfitPercentage"]["profit"]
     )
+
+
+async def category_vs_purchase_and_sales() -> CategoryVsPurchaseAndSalesDto:
+    with open("ms_analytics/data/data.json") as f:
+        data = json.load(f)
+    
+    return CategoryVsPurchaseAndSalesDto(
+        categories=data["accounting"]["categoryVsPurchaseAndSales"]["categories"],
+        purchase=data["accounting"]["categoryVsPurchaseAndSales"]["purchase"],
+        sales=data["accounting"]["categoryVsPurchaseAndSales"]["sales"]
+    )
+    
+    

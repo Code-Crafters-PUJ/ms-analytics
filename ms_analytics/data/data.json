@@ -1,16 +1,15 @@
 {
   "accounting": {
-    "lossVsProfit": {
+    "lossVsProfitPercentage": {
       "loss": 0.37,
       "profit": 0.63
     },
     "categoryVsPurchaseAndSales": {
-      "category": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],
-      "purchase": [20, 30, 10, 15, 5],
+      "categories": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],
+      "purchase": [200, 300, 100, 150, 50],
       "sales": [300, 420, 230, 250, 130]
     }
   },
-  "general": {},
   "inventory": {
     "categoryVsStockPercentage": {
       "category": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],

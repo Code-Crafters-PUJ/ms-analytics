@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ms_analytics"
-version = "0.1.0"
+version = "0.2.1"
 description = ""
 authors = ["Santicm23 <Santicastrom@outlook.com>"]
 readme = "README.md"

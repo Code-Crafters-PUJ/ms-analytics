@@ -1,5 +1,6 @@
-from .general_controller import get_general_info
+from .accounting_controller import category_vs_purchase_and_sales, loss_vs_profit
 
 __all__ = [
-    "get_general_info",
+    "category_vs_purchase_and_sales",
+    "loss_vs_profit",
 ]
