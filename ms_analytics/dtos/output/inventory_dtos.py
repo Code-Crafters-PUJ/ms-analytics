@@ -2,15 +2,15 @@ from pydantic import BaseModel
 
 
 class CategoryVsStockPercentageDto(BaseModel):
-    categories: str
-    stock_percentage: float
+    categories: list[str]
+    stock_percentage: list[float]
 
 
 class ProductVsTop5lessStockDto(BaseModel):
-    products: str
-    stock: int
+    products: list[str]
+    stock: list[int]
 
 
 class ProviderVsStockPercentageDto(BaseModel):
-    providers: str
-    stock_percentage: float
+    providers: list[str]
+    stock_percentage: list[float]
