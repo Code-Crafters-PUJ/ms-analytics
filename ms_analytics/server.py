@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from ms_analytics.config.docs.metadata import load_metadata
 
@@ -13,6 +14,14 @@ from .routers import (
 app = FastAPI()
 
 load_metadata(app)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:4200"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(router=general_router, prefix="/general", tags=["general"])
 app.include_router(router=accounting_router, prefix="/accounting", tags=["accounting"])
