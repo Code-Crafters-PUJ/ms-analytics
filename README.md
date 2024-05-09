@@ -1,6 +1,11 @@
 # ms-analytics
 
 
+Set up environment variables:
+- copy .env.template
+- rename it to .env
+- complete the variables
+
 Install poetry:
 - https://install.python-poetry.org
 
