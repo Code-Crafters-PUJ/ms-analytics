@@ -11,14 +11,14 @@ router = APIRouter()
 
 @router.get("/month-vs-salary")
 async def month_vs_salary_route(
-    _: Annotated[None, Depends(validate_role(Role.ADMIN))]
+    # _: Annotated[None, Depends(validate_role(Role.ADMIN))]
 ) -> MonthVsSalaryDto:
     return await month_vs_salary()
 
 
 @router.get("/fortnight-vs-salary")
 async def fortnight_vs_salary_route(
-    _: Annotated[None, Depends(validate_role(Role.ADMIN))]
+    # _: Annotated[None, Depends(validate_role(Role.ADMIN))]
 ) -> FortnightVsSalaryDto:
     return await fortnight_vs_salary()
     

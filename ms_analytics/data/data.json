@@ -27,14 +27,14 @@
   "payroll": {
     "monthVsSalary": {
       "months": [
-        "jan",
+        "ene",
         "feb",
         "mar",
-        "apr",
+        "abr",
         "may",
         "jun",
         "jul",
-        "aug",
+        "ago",
         "sep",
         "oct",
         "nov",
@@ -47,30 +47,30 @@
     },
     "fortnightVsSalary": {
       "fortnights": [
-        "1st",
-        "2nd",
-        "3rd",
-        "4th",
-        "5th",
-        "6th",
-        "7th",
-        "8th",
-        "9th",
-        "10th",
-        "11th",
-        "12th",
-        "13th",
-        "14th",
-        "15th",
-        "16th",
-        "17th",
-        "18th",
-        "19th",
-        "20th",
-        "21st",
-        "22nd",
-        "23rd",
-        "24th"
+        "ene I",
+        "ene II",
+        "feb I",
+        "feb II",
+        "mar I",
+        "mar II",
+        "abr I",
+        "abr II",
+        "may I",
+        "may II",
+        "jun I",
+        "jun II",
+        "jul I",
+        "jul II",
+        "ago I",
+        "ago II",
+        "sep I",
+        "sep II",
+        "oct I",
+        "oct II",
+        "nov I",
+        "nov II",
+        "dec I",
+        "dec II"
       ],
       "salaries": [
         550000, 550000, 550000, 550000, 550000, 550000, 600000, 600000, 575000,
@@ -100,8 +100,8 @@
         "dec"
       ],
       "income": [
-        13500000, 13000000, 12500000, 13000000, 14000000, 14000000, 15500000, 13000000,
-        12500000, 12500000, 14000000, 16000000
+        13500000, 13000000, 12500000, 13000000, 14000000, 14000000, 15500000,
+        13000000, 12500000, 12500000, 14000000, 16000000
       ]
     },
     "branchVsSales": {
