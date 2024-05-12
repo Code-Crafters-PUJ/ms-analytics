@@ -18,7 +18,6 @@ from ..dtos.output import (
     TopSaledProductsVsSalesDto,
 )
 from ..middlewares.role_middleware import validate_role
-from ..middlewares.role_middleware import validate_role
 
 router = APIRouter()
 
@@ -40,9 +39,6 @@ async def get_category_vs_stock_percentage(
 async def get_loss_vs_profit(
     # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
 ) -> LossVsProfitDto:
-async def get_loss_vs_profit(
-    # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
-) -> LossVsProfitDto:
     return await loss_vs_profit()
 
 
@@ -50,16 +46,10 @@ async def get_loss_vs_profit(
 async def get_month_vs_salary(
     # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
 ) -> MonthVsSalaryDto:
-async def get_month_vs_salary(
-    # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
-) -> MonthVsSalaryDto:
     return await month_vs_salary()
 
 
 @router.get("/top-saled-products-vs-sales")
-async def get_top_saled_products_vs_sales(
-    # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
-) -> TopSaledProductsVsSalesDto:
 async def get_top_saled_products_vs_sales(
     # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
 ) -> TopSaledProductsVsSalesDto:
