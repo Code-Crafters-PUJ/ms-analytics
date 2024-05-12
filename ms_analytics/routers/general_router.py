@@ -1,8 +1,6 @@
 from typing import Annotated
 
 from fastapi import APIRouter, Depends
-from fastapi.encoders import jsonable_encoder
-from fastapi.responses import JSONResponse
 
 from ..config.constants.app import Role
 from ..controllers import (
@@ -25,14 +23,8 @@ router = APIRouter()
 @router.get("/category-vs-stock-percentage")
 async def get_category_vs_stock_percentage(
     # _: Annotated[None, Depends(validate_role(Role.ADMIN))],
-) -> JSONResponse:
-    return JSONResponse(
-        jsonable_encoder(await category_vs_stock_percentage()),
-        headers={
-            "Content-Disposition": 'inline; filename="out.json"',
-            "encoding": "utf-8",
-        },
-    )
+) -> CategoryVsStockPercentageDto:
+    return await category_vs_stock_percentage()
 
 
 @router.get("/loss-vs-profit")
