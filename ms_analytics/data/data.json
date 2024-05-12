@@ -1,0 +1,112 @@
+{
+  "accounting": {
+    "lossVsProfitPercentage": {
+      "loss": 0.37,
+      "profit": 0.63
+    },
+    "categoryVsPurchaseAndSales": {
+      "categories": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],
+      "purchase": [200, 300, 100, 150, 50],
+      "sales": [300, 420, 230, 250, 130]
+    }
+  },
+  "inventory": {
+    "categoryVsStockPercentage": {
+      "categories": ["Gaseosas", "Lácteos", "Derivados del trigo", "Proteinas", "Cereales", "otros"],
+      "stock": [0.2, 0.3, 0.1, 0.15, 0.05, 0.2]
+    },
+    "productVsTop5lessStock": {
+      "products": ["Pan integral", "Leche de almendras", "Cocosette", "Naranja Postobón", "Recreo"],
+      "stock": [5, 7, 9, 12, 20]
+    },
+    "providerVsStockPercentage": {
+      "providers": ["Alpina", "Bimbo", "Colombina", "Kellogg's", "Postobón"],
+      "stock": [0.2, 0.3, 0.1, 0.15, 0.25]
+    }
+  },
+  "payroll": {
+    "monthVsSalary": {
+      "months": [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec"
+      ],
+      "salaries": [
+        1100000, 1100000, 1100000, 1200000, 1150000, 1200000, 1300000, 1300000,
+        1150000, 1100000, 1200000, 1250000
+      ]
+    },
+    "fortnightVsSalary": {
+      "fortnights": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th",
+        "5th",
+        "6th",
+        "7th",
+        "8th",
+        "9th",
+        "10th",
+        "11th",
+        "12th",
+        "13th",
+        "14th",
+        "15th",
+        "16th",
+        "17th",
+        "18th",
+        "19th",
+        "20th",
+        "21st",
+        "22nd",
+        "23rd",
+        "24th"
+      ],
+      "salaries": [
+        550000, 550000, 550000, 550000, 550000, 550000, 600000, 600000, 575000,
+        575000, 600000, 600000, 650000, 650000, 650000, 650000, 575000, 575000,
+        550000, 550000, 600000, 600000, 625000, 625000
+      ]
+    }
+  },
+  "sales": {
+    "topSaledProductsVsSales": {
+      "products": ["Leche entera", "Pan blanco", "Oreo", "Polette", "CocaCola"],
+      "sales": [93, 80, 78, 64, 63]
+    },
+    "monthVsIncome": {
+      "months": [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec"
+      ],
+      "income": [
+        13500000, 13000000, 12500000, 13000000, 14000000, 14000000, 15500000, 13000000,
+        12500000, 12500000, 14000000, 16000000
+      ]
+    },
+    "branchVsSales": {
+      "branches": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cartagena"],
+      "sales": [75000000, 69000000, 65000000, 60000000, 42000000]
+    }
+  }
+}
